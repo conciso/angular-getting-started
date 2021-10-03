@@ -8,8 +8,5 @@ import { MyService } from '../my.service';
   styleUrls: ['./my.component.scss'],
 })
 export class MyComponent {
-  myBoolean = true;
-  myArray = [1, 2, 3];
-
   constructor(private myService: MyService) {}
 }
