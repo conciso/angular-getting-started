@@ -8,5 +8,11 @@ import { MyService } from '../my.service';
   styleUrls: ['./my.component.scss'],
 })
 export class MyComponent {
+  subComponentOutput = '';
+
   constructor(private myService: MyService) {}
+
+  writeOutput(outputValue: string): void {
+    this.subComponentOutput = outputValue;
+  }
 }
