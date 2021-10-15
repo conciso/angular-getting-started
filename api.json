@@ -1,0 +1,7 @@
+{
+  "sample-data": [
+    { "id": 0, "message": "Hello world" },
+    { "id": 1, "message": "this is" },
+    { "id": 2, "message": "a test" }
+  ]
+}
