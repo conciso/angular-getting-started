@@ -1,2 +1,21 @@
 <app-sub textValue="Change me!" (onSave)="writeOutput($event)"></app-sub>
+<br />
 <div>{{ subComponentOutput }}</div>
+<br />
+<br />
+<div>
+  <span>Beispieloutput vom json-server als einzelnes Element</span>
+  <div *ngIf="singleSampleData$ | async as singleDataPoint">
+    {{ singleDataPoint.message }}
+  </div>
+</div>
+<br />
+<br />
+<div>
+  <span>Beispieloutput vom json-server als Array</span>
+  <ul>
+    <li *ngFor="let dataPoint of multiSampleData$ | async">
+      {{ dataPoint.message }}
+    </li>
+  </ul>
+</div>
